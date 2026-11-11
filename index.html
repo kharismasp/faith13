@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f8f6ef"><meta name="description" content="Fraction practice with written calculations, steps that stay visible, and an apple collection mission.">
+<title>Faith · Fraction Garden</title><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="play.css"><link rel="stylesheet" href="mission.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#" id="home-link"><span class="brand-icon" aria-hidden="true">✿</span><span>Faith<span class="brand-sep"> / </span><span class="brand-sub">Fraction Garden</span></span></a><div class="top-actions"><button id="language" class="text-btn" aria-label="Change language">EN <span aria-hidden="true">⌄</span></button><button id="pause" class="text-btn" data-i="pause">Take a breather</button><button id="teacher" class="icon-btn" aria-label="Teacher notes">☷</button></div></header>
+<main class="layout">
+<aside class="garden-panel" aria-label="Garden and puzzle map">
+<div class="garden-intro"><div class="eyebrow" data-i="welcome">FAITH</div><h1 data-i="gardenTitle">Fractions</h1><p data-i="gardenIntro">20 puzzles · 5 sections</p></div>
+<div class="story-art scene-0" id="garden-art" role="img" aria-label="Pip the bunny tending a peaceful garden"><div class="art-fallback" aria-hidden="true">🌷 🐇 🌿</div></div>
+<div class="collection" hidden><span class="seed-icon" aria-hidden="true">❧</span><span id="seed-count">0 little seeds collected</span><span class="collection-dots" id="collection-dots" aria-hidden="true"></span></div>
+<nav class="trail" id="trail" aria-label="Puzzle patches"></nav>
+<div class="side-note"><span aria-hidden="true">◷</span><span data-i="ownPace"></span></div>
+</aside>
+<section class="work-area" aria-label="Fraction practice">
+<div class="work-top"><div><span class="eyebrow" id="patch-label"></span><span class="puzzle-count" id="puzzle-count"></span></div><div class="mode-switch" hidden></div></div>
+<div class="progress-track" id="progress-track" aria-label="Progress through this patch"></div>
+<article class="puzzle-card" id="puzzle-card" tabindex="-1"></article>
+<div class="bottom-tools"><button id="help" class="text-btn"><span aria-hidden="true">☼</span> <span data-i="help">A little help</span></button><span class="saved-note" id="save-note" data-i="saved">Saved on this browser</span></div>
+<div id="hint-area" class="hint-area" hidden></div>
+<p class="anchor-line" data-i="anchor"></p>
+</section>
+<aside class="scratch-side" aria-label="Apple basket and blank working space"><section class="apple-mission" aria-labelledby="mission-title"><h2 id="mission-title">Collect 20 apples</h2><p id="mission-note">Solve a puzzle. Collect an apple.</p><div class="basket-stage" id="basket-stage"><div class="basket-fruit" id="basket-fruit" aria-hidden="true"></div><svg class="basket-drawing" viewBox="0 0 260 160" aria-hidden="true"><defs><pattern id="weave" width="18" height="16" patternUnits="userSpaceOnUse"><rect width="18" height="16" fill="#c3965d"/><path d="M0 5H18M0 13H18" stroke="#a67640" stroke-width="2"/><path d="M4 0V5M13 5V13M4 13V16" stroke="#e1b47d" stroke-width="3"/></pattern></defs><path d="M61 72C62-3 198-3 199 72" fill="none" stroke="#9d6b38" stroke-width="12"/><path d="M61 72C62-3 198-3 199 72" fill="none" stroke="#deb27b" stroke-width="6"/><path d="M30 73L51 139Q130 163 209 139L230 73Z" fill="url(#weave)" stroke="#9c6a37" stroke-width="3"/><ellipse cx="130" cy="72" rx="101" ry="18" fill="#a97942" stroke="#d5a568" stroke-width="6"/><path d="M38 79Q130 104 222 79L209 139Q130 163 51 139Z" fill="url(#weave)" stroke="#9c6a37" stroke-width="3"/><path d="M37 80Q130 105 223 80" fill="none" stroke="#e1b179" stroke-width="8"/><path d="M53 137Q130 157 207 137" fill="none" stroke="#986a38" stroke-width="5"/></svg></div><p class="apple-count" id="apple-count" role="status" aria-live="polite">0 / 20 apples</p></section><div class="paper-heading"><strong>TULIS CARANYA</strong><span id="paper-note">Tulis pecahan dan perhitungannya di sini.</span></div><div class="plain-paper" aria-label="Blank white space for annotations"></div></aside>
+</main>
+<dialog id="teacher-dialog" aria-labelledby="teacher-title"><div class="dialog-head"><span class="eyebrow">FOR THE GROWN-UP</span><button class="icon-btn close-dialog" aria-label="Close">×</button></div><h2 id="teacher-title">A gentler fraction session</h2><div id="teacher-content"></div></dialog>
+<script src="content.js"></script><script src="engine.js"></script><script src="app.js"></script>
+</body></html>
